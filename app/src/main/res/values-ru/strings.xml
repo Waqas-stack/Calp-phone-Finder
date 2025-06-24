@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Поиск телефона по хлопку</string>
+    <string name="clap_to_find_desc">Похлопайте, чтобы найти свой телефон</string>
+    <string name="click_to_activate">Нажмите для активации</string>
+    <string name="flash_mode">Режим вспышки</string>
+    <string name="vibration_mode">Режим вибрации</string>
+    <string name="more_settings">Дополнительные настройки</string>
+    <string name="how_to_use">Как использовать</string>
+    <string name="sound">Звук</string>
+    <string name="command">Команда</string>
+    <string name="sound_sensitivity">Чувствительность звука</string>
+    <string name="schedule_deactivate">Функция автоматического отключения</string>
+    <string name="start">Начало</string>
+    <string name="end">Конец</string>
+    <string name="remove_ads">Удалить рекламу</string>
+    <string name="remove_ads_desc">Удалить всю рекламу из приложения</string>
+    <string name="sensitivity_very_high">Очень высокая чувствительность</string>
+    <string name="sensitivity_high">Высокая чувствительность</string>
+    <string name="sensitivity_average">Средняя чувствительность</string>
+    <string name="setting">Настройки</string>
+    <string name="rate_me">Оцените меня</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="version">Версия</string>
+    <string name="apply">Применить</string>
+    <string name="volume">Громкость</string>
+    <string name="duration">Длительность</string>
+    <string name="tap_to_play_sound">Нажмите, чтобы воспроизвести звук</string>
+    <string name="sound_steam_air">Пар</string>
+    <string name="sound_baby_laugh">Смех младенца</string>
+    <string name="sound_boom">Взрыв</string>
+    <string name="sound_dog">Собака</string>
+    <string name="sound_cat">Кошка</string>
+    <string name="sound_church">Церковь</string>
+    <string name="sound_door_bell">Дверной звонок</string>
+    <string name="sound_horn">Гудок</string>
+    <string name="sound_drum">Барабан</string>
+    <string name="sound_hello">Привет</string>
+    <string name="sound_im_here">Я здесь</string>
+    <string name="sound_message">Сообщение</string>
+    <string name="sound_morse">Азбука Морзе</string>
+    <string name="sound_police">Полиция</string>
+    <string name="sound_piano">Пианино</string>
+    <string name="sound_rhythm">Ритм</string>
+    <string name="sound_ship_bell">Корабельный колокол</string>
+    <string name="sound_beep">Бип</string>
+    <string name="sound_warning">Предупреждение</string>
+    <string name="sound_wind_chimes">Колокольчики ветра</string>
+
+    <string name="please_reactivate">Пожалуйста, повторно активируйте функцию, чтобы продолжить использование</string>
+    <string name="feature_deactivated">Функция деактивирована</string>
+    <string name="function_activated_tap_to_close">Функция активирована, нажмите для отключения</string>
+    <string name="clap_activated_successfully">Хлопок успешно активирован</string>
+    <string name="subscribe_remove_ads">Подпишитесь, чтобы удалить всю рекламу и наслаждаться без перебоев</string>
+    <string name="go_premium">Перейти на Премиум</string>
+    <string name="rate_this_app">Оцените это приложение</string>
+    <string name="submit">Отправить</string>
+    <string name="confirmation">Подтверждение</string>
+    <string name="are_you_sure">Вы уверены, что хотите</string>
+    <string name="yes">Да</string>
+    <string name="cancel">Отмена</string>
+
+
+
+</resources>

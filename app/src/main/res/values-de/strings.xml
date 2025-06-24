@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Telefonfinder durch Klatschen</string>
+    <string name="clap_to_find_desc">Klatschen, um dein Telefon zu finden</string>
+    <string name="click_to_activate">Zum Aktivieren klicken</string>
+    <string name="flash_mode">Blitzmodus</string>
+    <string name="vibration_mode">Vibrationsmodus</string>
+    <string name="more_settings">Weitere Einstellungen</string>
+    <string name="how_to_use">Anleitung</string>
+    <string name="sound">Ton</string>
+    <string name="command">Befehl</string>
+    <string name="sound_sensitivity">Tonempfindlichkeit</string>
+    <string name="schedule_deactivate">Geplante Deaktivierung</string>
+    <string name="start">Start</string>
+    <string name="end">Ende</string>
+    <string name="remove_ads">Werbung entfernen</string>
+    <string name="remove_ads_desc">Entferne alle Werbeanzeigen aus der App.</string>
+    <string name="sensitivity_very_high">Sehr hohe Empfindlichkeit</string>
+    <string name="sensitivity_high">Hohe Empfindlichkeit</string>
+    <string name="sensitivity_average">Mittlere Empfindlichkeit</string>
+    <string name="setting">Einstellungen</string>
+    <string name="rate_me">Bewerte mich</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Datenschutzerklärung</string>
+    <string name="version">Version</string>
+    <string name="apply">Anwenden</string>
+    <string name="volume">Lautstärke</string>
+    <string name="duration">Dauer</string>
+    <string name="tap_to_play_sound">Tippen, um Ton abzuspielen</string>
+    <string name="sound_steam_air">Dampf</string>
+    <string name="sound_baby_laugh">Baby-Lachen</string>
+    <string name="sound_boom">Explosion</string>
+    <string name="sound_dog">Hund</string>
+    <string name="sound_cat">Katze</string>
+    <string name="sound_church">Kirche</string>
+    <string name="sound_door_bell">Türklingel</string>
+    <string name="sound_horn">Hupe</string>
+    <string name="sound_drum">Trommel</string>
+    <string name="sound_hello">Hallo</string>
+    <string name="sound_im_here">Ich bin hier</string>
+    <string name="sound_message">Nachricht</string>
+    <string name="sound_morse">Morse</string>
+    <string name="sound_police">Polizei</string>
+    <string name="sound_piano">Klavier</string>
+    <string name="sound_rhythm">Rhythmus</string>
+    <string name="sound_ship_bell">Schiffsglocke</string>
+    <string name="sound_beep">Piepton</string>
+    <string name="sound_warning">Warnung</string>
+    <string name="sound_wind_chimes">Windspiel</string>
+
+    <string name="please_reactivate">Bitte reaktivieren Sie die Funktion, um sie weiter zu verwenden</string>
+    <string name="feature_deactivated">Funktion deaktiviert</string>
+    <string name="function_activated_tap_to_close">Diese Funktion ist aktiviert, tippen Sie zum Schließen</string>
+    <string name="clap_activated_successfully">Klappern erfolgreich aktiviert</string>
+    <string name="subscribe_remove_ads">Abonnieren Sie, um alle Werbung zu entfernen und ein ununterbrochenes Erlebnis zu genießen.</string>
+    <string name="go_premium">Premium werden</string>
+    <string name="rate_this_app">Diese App bewerten</string>
+    <string name="submit">Absenden</string>
+    <string name="confirmation">Bestätigung</string>
+    <string name="are_you_sure">Sind Sie sicher, dass Sie</string>
+    <string name="yes">Ja</string>
+    <string name="cancel">Abbrechen</string>
+
+
+</resources>

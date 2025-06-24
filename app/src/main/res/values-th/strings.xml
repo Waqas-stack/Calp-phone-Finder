@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ค้นหาโทรศัพท์ด้วยเสียงปรบมือ</string>
+    <string name="clap_to_find_desc">ปรบมือเพื่อค้นหาโทรศัพท์ของคุณ</string>
+    <string name="click_to_activate">คลิกเพื่อเปิดใช้งาน</string>
+    <string name="flash_mode">โหมดแฟลช</string>
+    <string name="vibration_mode">โหมดสั่น</string>
+    <string name="more_settings">การตั้งค่าเพิ่มเติม</string>
+    <string name="how_to_use">วิธีใช้งาน</string>
+    <string name="sound">เสียง</string>
+    <string name="command">คำสั่ง</string>
+    <string name="sound_sensitivity">ความไวของเสียง</string>
+    <string name="schedule_deactivate">ฟีเจอร์ปิดตามเวลา</string>
+    <string name="start">เริ่มต้น</string>
+    <string name="end">สิ้นสุด</string>
+    <string name="remove_ads">ลบโฆษณา</string>
+    <string name="remove_ads_desc">ลบโฆษณาทั้งหมดออกจากแอปพลิเคชัน</string>
+    <string name="sensitivity_very_high">ความไวระดับสูงมาก</string>
+    <string name="sensitivity_high">ความไวระดับสูง</string>
+    <string name="sensitivity_average">ความไวระดับปานกลาง</string>
+    <string name="setting">การตั้งค่า</string>
+    <string name="rate_me">ให้คะแนนฉัน</string>
+    <string name="feedback">ข้อเสนอแนะ</string>
+    <string name="privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="version">เวอร์ชัน</string>
+    <string name="apply">นำไปใช้</string>
+    <string name="volume">ระดับเสียง</string>
+    <string name="duration">ระยะเวลา</string>
+    <string name="tap_to_play_sound">แตะเพื่อเล่นเสียง</string>
+    <string name="sound_steam_air">ไอน้ำ</string>
+    <string name="sound_baby_laugh">เสียงหัวเราะของทารก</string>
+    <string name="sound_boom">เสียงระเบิด</string>
+    <string name="sound_dog">สุนัข</string>
+    <string name="sound_cat">แมว</string>
+    <string name="sound_church">โบสถ์</string>
+    <string name="sound_door_bell">กริ่งประตู</string>
+    <string name="sound_horn">แตร</string>
+    <string name="sound_drum">กลอง</string>
+    <string name="sound_hello">สวัสดี</string>
+    <string name="sound_im_here">ฉันอยู่ที่นี่</string>
+    <string name="sound_message">ข้อความ</string>
+    <string name="sound_morse">รหัสมอร์ส</string>
+    <string name="sound_police">ตำรวจ</string>
+    <string name="sound_piano">เปียโน</string>
+    <string name="sound_rhythm">จังหวะ</string>
+    <string name="sound_ship_bell">ระฆังเรือ</string>
+    <string name="sound_beep">เสียงบี๊บ</string>
+    <string name="sound_warning">คำเตือน</string>
+    <string name="sound_wind_chimes">กระดิ่งลม</string>
+
+
+    <string name="please_reactivate">กรุณาเปิดใช้งานฟังก์ชันอีกครั้งเพื่อใช้งานต่อ</string>
+    <string name="feature_deactivated">ฟีเจอร์ถูกปิดใช้งาน</string>
+    <string name="function_activated_tap_to_close">ฟังก์ชันนี้เปิดใช้งานอยู่ แตะเพื่อปิด</string>
+    <string name="clap_activated_successfully">เปิดใช้งานเสียงปรบมือเรียบร้อยแล้ว</string>
+    <string name="subscribe_remove_ads">สมัครสมาชิกเพื่อเอาโฆษณาทั้งหมดออกและเพลิดเพลินกับประสบการณ์ที่ไม่ถูกขัดจังหวะ</string>
+    <string name="go_premium">อัปเกรดเป็นพรีเมียม</string>
+    <string name="rate_this_app">ให้คะแนนแอปนี้</string>
+    <string name="submit">ส่ง</string>
+    <string name="confirmation">ยืนยัน</string>
+    <string name="are_you_sure">คุณแน่ใจหรือไม่ว่าต้องการทำสิ่งนี้</string>
+    <string name="yes">ใช่</string>
+    <string name="cancel">ยกเลิก</string>
+
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Εντοπισμός Τηλεφώνου με Παλαμάκια</string>
+    <string name="clap_to_find_desc">Χτυπήστε παλαμάκια για να βρείτε το τηλέφωνό σας</string>
+    <string name="click_to_activate">Κάντε κλικ για ενεργοποίηση</string>
+    <string name="flash_mode">Λειτουργία φλας</string>
+    <string name="vibration_mode">Λειτουργία δόνησης</string>
+    <string name="more_settings">Περισσότερες ρυθμίσεις</string>
+    <string name="how_to_use">Πώς να χρησιμοποιήσετε</string>
+    <string name="sound">Ήχος</string>
+    <string name="command">Εντολή</string>
+    <string name="sound_sensitivity">Ευαισθησία ήχου</string>
+    <string name="schedule_deactivate">Προγραμματισμένη απενεργοποίηση</string>
+    <string name="start">Έναρξη</string>
+    <string name="end">Τέλος</string>
+    <string name="remove_ads">Κατάργηση διαφημίσεων</string>
+    <string name="remove_ads_desc">Καταργήστε όλες τις διαφημίσεις από την εφαρμογή.</string>
+    <string name="sensitivity_very_high">Πολύ υψηλή ευαισθησία</string>
+    <string name="sensitivity_high">Υψηλή ευαισθησία</string>
+    <string name="sensitivity_average">Μέση ευαισθησία</string>
+    <string name="setting">Ρυθμίσεις</string>
+    <string name="rate_me">Αξιολογήστε με</string>
+    <string name="feedback">Ανατροφοδότηση</string>
+    <string name="privacy_policy">Πολιτική απορρήτου</string>
+    <string name="version">Έκδοση</string>
+    <string name="apply">Εφαρμογή</string>
+    <string name="volume">Ένταση</string>
+    <string name="duration">Διάρκεια</string>
+    <string name="tap_to_play_sound">Πατήστε για αναπαραγωγή ήχου</string>
+    <string name="sound_steam_air">Ατμός</string>
+    <string name="sound_baby_laugh">Γέλιο μωρού</string>
+    <string name="sound_boom">Έκρηξη</string>
+    <string name="sound_dog">Σκύλος</string>
+    <string name="sound_cat">Γάτα</string>
+    <string name="sound_church">Εκκλησία</string>
+    <string name="sound_door_bell">Κουδούνι πόρτας</string>
+    <string name="sound_horn">Κόρνα</string>
+    <string name="sound_drum">Τύμπανο</string>
+    <string name="sound_hello">Γεια σου</string>
+    <string name="sound_im_here">Είμαι εδώ</string>
+    <string name="sound_message">Μήνυμα</string>
+    <string name="sound_morse">Μορς</string>
+    <string name="sound_police">Αστυνομία</string>
+    <string name="sound_piano">Πιάνο</string>
+    <string name="sound_rhythm">Ρυθμός</string>
+    <string name="sound_ship_bell">Καμπάνα πλοίου</string>
+    <string name="sound_beep">Μπιπ</string>
+    <string name="sound_warning">Προειδοποίηση</string>
+    <string name="sound_wind_chimes">Καμπανάκια αέρα</string>
+
+    <string name="please_reactivate">Παρακαλώ ενεργοποιήστε ξανά τη λειτουργία για να συνεχίσετε να τη χρησιμοποιείτε</string>
+    <string name="feature_deactivated">Η λειτουργία απενεργοποιήθηκε</string>
+    <string name="function_activated_tap_to_close">Αυτή η λειτουργία είναι ενεργοποιημένη, πατήστε για να την απενεργοποιήσετε</string>
+    <string name="clap_activated_successfully">Το χειροκρότημα ενεργοποιήθηκε με επιτυχία</string>
+    <string name="subscribe_remove_ads">Εγγραφείτε για να αφαιρέσετε όλες τις διαφημίσεις και να απολαύσετε μια απρόσκοπτη εμπειρία.</string>
+    <string name="go_premium">Αναβάθμιση σε Premium</string>
+    <string name="rate_this_app">Αξιολογήστε αυτήν την εφαρμογή</string>
+    <string name="submit">Υποβολή</string>
+    <string name="confirmation">Επιβεβαίωση</string>
+    <string name="are_you_sure">Είστε σίγουροι ότι θέλετε να</string>
+    <string name="yes">Ναι</string>
+    <string name="cancel">Ακύρωση</string>
+
+
+</resources>

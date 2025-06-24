@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trova Telefono con Applauso</string>
+    <string name="clap_to_find_desc">Applaudi per trovare il tuo telefono</string>
+    <string name="click_to_activate">Clicca per attivare</string>
+    <string name="flash_mode">Modalità flash</string>
+    <string name="vibration_mode">Modalità vibrazione</string>
+    <string name="more_settings">Altre impostazioni</string>
+    <string name="how_to_use">Come si usa</string>
+    <string name="sound">Suono</string>
+    <string name="command">Comando</string>
+    <string name="sound_sensitivity">Sensibilità al suono</string>
+    <string name="schedule_deactivate">Pianifica disattivazione&#10;Funzione</string>
+    <string name="start">Inizio</string>
+    <string name="end">Fine</string>
+    <string name="remove_ads">Rimuovi annunci</string>
+    <string name="remove_ads_desc">Rimuovi tutti gli annunci&#10;dall\'applicazione.</string>
+    <string name="sensitivity_very_high">Sensibilità molto alta</string>
+    <string name="sensitivity_high">Sensibilità alta</string>
+    <string name="sensitivity_average">Sensibilità media</string>
+    <string name="setting">Impostazioni</string>
+    <string name="rate_me">Valutami</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Informativa sulla privacy</string>
+    <string name="version">Versione</string>
+    <string name="apply">Applica</string>
+    <string name="volume">Volume</string>
+    <string name="duration">Durata</string>
+    <string name="tap_to_play_sound">Tocca per riprodurre il suono</string>
+    <string name="sound_steam_air">Vapore</string>
+    <string name="sound_baby_laugh">Risata di bambino</string>
+    <string name="sound_boom">Boom</string>
+    <string name="sound_dog">Cane</string>
+    <string name="sound_cat">Gatto</string>
+    <string name="sound_church">Chiesa</string>
+    <string name="sound_door_bell">Campanello</string>
+    <string name="sound_horn">Clacson</string>
+    <string name="sound_drum">Tamburo</string>
+    <string name="sound_hello">Ciao</string>
+    <string name="sound_im_here">Sono qui</string>
+    <string name="sound_message">Messaggio</string>
+    <string name="sound_morse">Morse</string>
+    <string name="sound_police">Polizia</string>
+    <string name="sound_piano">Pianoforte</string>
+    <string name="sound_rhythm">Ritmo</string>
+    <string name="sound_ship_bell">Campana della nave</string>
+    <string name="sound_beep">Bip</string>
+    <string name="sound_warning">Avviso</string>
+    <string name="sound_wind_chimes">Campanelli a vento</string>
+
+    <string name="please_reactivate">Per continuare a usare la funzione,riattivala</string>
+    <string name="feature_deactivated">Funzione disattivata</string>
+    <string name="function_activated_tap_to_close">Funzione attivata, tocca per chiudere</string>
+    <string name="clap_activated_successfully">Riconoscimento del battito attivato con successo</string>
+    <string name="subscribe_remove_ads">Abbonati per rimuovere tutti gli annunci e godere di un\'esperienza senza interruzioni.</string>
+    <string name="go_premium">Passa a Premium</string>
+    <string name="rate_this_app">Valuta questa app</string>
+    <string name="submit">Invia</string>
+    <string name="confirmation">Conferma</string>
+    <string name="are_you_sure">Sei sicuro di volerlo fare?</string>
+    <string name="yes">Sì</string>
+    <string name="cancel">Annulla</string>
+
+</resources>

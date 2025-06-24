@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">তালি দিয়ে ফোন খুঁজুন</string>
+    <string name="clap_to_find_desc">আপনার ফোন খুঁজতে তালি দিন</string>
+    <string name="click_to_activate">সক্রিয় করতে ক্লিক করুন</string>
+    <string name="flash_mode">ফ্ল্যাশ মোড</string>
+    <string name="vibration_mode">ভাইব্রেশন মোড</string>
+    <string name="more_settings">আরও সেটিংস</string>
+    <string name="how_to_use">ব্যবহারবিধি</string>
+    <string name="sound">সাউন্ড</string>
+    <string name="command">কমান্ড</string>
+    <string name="sound_sensitivity">সাউন্ড সেনসিটিভিটি</string>
+    <string name="schedule_deactivate">নির্ধারিত সময়ে বন্ধ ফিচার</string>
+    <string name="start">শুরু</string>
+    <string name="end">শেষ</string>
+    <string name="remove_ads">বিজ্ঞাপন সরান</string>
+    <string name="remove_ads_desc">অ্যাপ থেকে সকল বিজ্ঞাপন সরান।</string>
+    <string name="sensitivity_very_high">খুব বেশি সেনসিটিভিটি</string>
+    <string name="sensitivity_high">উচ্চ সেনসিটিভিটি</string>
+    <string name="sensitivity_average">গড় সেনসিটিভিটি</string>
+    <string name="setting">সেটিংস</string>
+    <string name="rate_me">আমাকে রেট করুন</string>
+    <string name="feedback">মতামত</string>
+    <string name="privacy_policy">গোপনীয়তা নীতি</string>
+    <string name="version">ভার্সন</string>
+    <string name="apply">প্রয়োগ করুন</string>
+    <string name="volume">ভলিউম</string>
+    <string name="duration">সময়কাল</string>
+    <string name="tap_to_play_sound">সাউন্ড চালাতে ট্যাপ করুন</string>
+    <string name="sound_steam_air">বাষ্পীয় বাতাস</string>
+    <string name="sound_baby_laugh">শিশুর হাসি</string>
+    <string name="sound_boom">বিস্ফোরণ</string>
+    <string name="sound_dog">কুকুর</string>
+    <string name="sound_cat">বিড়াল</string>
+    <string name="sound_church">গির্জা</string>
+    <string name="sound_door_bell">ডোরবেল</string>
+    <string name="sound_horn">হর্ন</string>
+    <string name="sound_drum">ড্রাম</string>
+    <string name="sound_hello">হ্যালো</string>
+    <string name="sound_im_here">আমি এখানে</string>
+    <string name="sound_message">বার্তা</string>
+    <string name="sound_morse">মোর্স</string>
+    <string name="sound_police">পুলিশ</string>
+    <string name="sound_piano">পিয়ানো</string>
+    <string name="sound_rhythm">ছন্দ</string>
+    <string name="sound_ship_bell">জাহাজের ঘন্টা</string>
+    <string name="sound_beep">বিপ</string>
+    <string name="sound_warning">সতর্কতা</string>
+    <string name="sound_wind_chimes">বাতাসের ঘন্টাধ্বনি</string>
+
+
+    <string name="please_reactivate">অনুগ্রহ করে ব্যবহার চালিয়ে যেতে ফাংশনটি পুনরায় সক্রিয় করুন</string>
+    <string name="feature_deactivated">ফিচার নিষ্ক্রিয় করা হয়েছে</string>
+    <string name="function_activated_tap_to_close">এই ফাংশনটি সক্রিয় আছে, বন্ধ করতে ট্যাপ করুন</string>
+    <string name="clap_activated_successfully">তালি সফলভাবে সক্রিয় করা হয়েছে</string>
+    <string name="subscribe_remove_ads">সব বিজ্ঞাপন সরাতে এবং নিরবচ্ছিন্ন অভিজ্ঞতা উপভোগ করতে সাবস্ক্রাইব করুন।</string>
+    <string name="go_premium">প্রিমিয়ামে যান</string>
+    <string name="rate_this_app">এই অ্যাপটি রেট দিন</string>
+    <string name="submit">জমা দিন</string>
+    <string name="confirmation">নিশ্চিতকরণ</string>
+    <string name="are_you_sure">আপনি কি নিশ্চিত আপনি</string>
+    <string name="yes">হ্যাঁ</string>
+    <string name="cancel">বাতিল</string>
+
+</resources>

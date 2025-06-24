@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alkışla Telefon Bulucu</string>
+    <string name="clap_to_find_desc">Telefonunuzu bulmak için alkışlayın</string>
+    <string name="click_to_activate">Etkinleştirmek için tıklayın</string>
+    <string name="flash_mode">Flaş Modu</string>
+    <string name="vibration_mode">Titreşim Modu</string>
+    <string name="more_settings">Daha Fazla Ayar</string>
+    <string name="how_to_use">Nasıl Kullanılır</string>
+    <string name="sound">Ses</string>
+    <string name="command">Komut</string>
+    <string name="sound_sensitivity">Ses Hassasiyeti</string>
+    <string name="schedule_deactivate">Zamanlı Devre Dışı Bırakma Özelliği</string>
+    <string name="start">Başlat</string>
+    <string name="end">Bitiş</string>
+    <string name="remove_ads">Reklamları Kaldır</string>
+    <string name="remove_ads_desc">Uygulamadan tüm reklamları kaldır.</string>
+    <string name="sensitivity_very_high">Çok Yüksek Hassasiyet</string>
+    <string name="sensitivity_high">Yüksek Hassasiyet</string>
+    <string name="sensitivity_average">Orta Hassasiyet</string>
+    <string name="setting">Ayarlar</string>
+    <string name="rate_me">Beni Puanla</string>
+    <string name="feedback">Geri Bildirim</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="version">Sürüm</string>
+    <string name="apply">Uygula</string>
+    <string name="volume">Ses Düzeyi</string>
+    <string name="duration">Süre</string>
+    <string name="tap_to_play_sound">Sesi çalmak için dokunun</string>
+    <string name="sound_steam_air">Buhar Sesi</string>
+    <string name="sound_baby_laugh">Bebek Kahkahası</string>
+    <string name="sound_boom">Patlama</string>
+    <string name="sound_dog">Köpek</string>
+    <string name="sound_cat">Kedi</string>
+    <string name="sound_church">Kilise</string>
+    <string name="sound_door_bell">Kapı Zili</string>
+    <string name="sound_horn">Korna</string>
+    <string name="sound_drum">Davul</string>
+    <string name="sound_hello">Merhaba</string>
+    <string name="sound_im_here">Buradayım</string>
+    <string name="sound_message">Mesaj</string>
+    <string name="sound_morse">Mors</string>
+    <string name="sound_police">Polis</string>
+    <string name="sound_piano">Piyano</string>
+    <string name="sound_rhythm">Ritim</string>
+    <string name="sound_ship_bell">Gemi Zili</string>
+    <string name="sound_beep">Bip</string>
+    <string name="sound_warning">Uyarı</string>
+    <string name="sound_wind_chimes">Rüzgar Çanları</string>
+
+
+    <string name="please_reactivate">Devam etmek için lütfen özelliği yeniden etkinleştirin</string>
+    <string name="feature_deactivated">Özellik devre dışı bırakıldı</string>
+    <string name="function_activated_tap_to_close">Bu özellik etkin, kapatmak için dokunun</string>
+    <string name="clap_activated_successfully">Alkış özelliği başarıyla etkinleştirildi</string>
+    <string name="subscribe_remove_ads">Tüm reklamları kaldırmak ve kesintisiz deneyimin tadını çıkarmak için abone olun.</string>
+    <string name="go_premium">Premium’a Geç</string>
+    <string name="rate_this_app">Bu Uygulamayı Oyla</string>
+    <string name="submit">Gönder</string>
+    <string name="confirmation">Onay</string>
+    <string name="are_you_sure">Bunu yapmak istediğinizden emin misiniz?</string>
+    <string name="yes">Evet</string>
+    <string name="cancel">İptal</string>
+
+</resources>

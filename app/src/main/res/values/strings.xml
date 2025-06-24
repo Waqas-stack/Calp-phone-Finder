@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Clap Phone Finder</string>
+    <string name="clap_to_find_desc">Clap to find your phone</string>
+    <string name="click_to_activate">Click to Active</string>
+    <string name="flash_mode">Flash Mode</string>
+    <string name="vibration_mode">Vibration Mode</string>
+    <string name="more_settings">More Settings</string>
+    <string name="how_to_use">How to use</string>
+    <string name="sound">Sound</string>
+    <string name="command">Command</string>
+    <string name="sound_sensitivity">Sound Sensitivity</string>
+    <string name="schedule_deactivate">Schedule-Deactivate\nFeature</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="remove_ads">Remove ADs</string>
+    <string name="remove_ads_desc">Remove all ads from the \napplication.</string>
+    <string name="sensitivity_very_high">very High sensitivity</string>
+    <string name="sensitivity_high">High sensitivity</string>
+    <string name="sensitivity_average">Average sensitivity</string>
+    <string name="setting">Setting</string>
+    <string name="rate_me">Rate Me</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="version">Version</string>
+    <string name="apply">Apply</string>
+    <string name="volume">Volume</string>
+    <string name="duration">Duration</string>
+    <string name="tap_to_play_sound">Tap to play sound</string>
+    <string name="sound_steam_air">Steam Air</string>
+    <string name="sound_baby_laugh">Baby Laugh</string>
+    <string name="sound_boom">Boom</string>
+    <string name="sound_dog">Dog</string>
+    <string name="sound_cat">Cat</string>
+    <string name="sound_church">Church</string>
+    <string name="sound_door_bell">Door Bell</string>
+    <string name="sound_horn">Horn</string>
+    <string name="sound_drum">Drum</string>
+    <string name="sound_hello">Hello</string>
+    <string name="sound_im_here">I\'m here</string>
+    <string name="sound_message">message</string>
+    <string name="sound_morse">morse</string>
+    <string name="sound_police">police</string>
+    <string name="sound_piano">piano</string>
+    <string name="sound_rhythm">Rhythm</string>
+    <string name="sound_ship_bell">Ship Bell</string>
+    <string name="sound_beep">Beep</string>
+    <string name="sound_warning">Warning</string>
+    <string name="sound_wind_chimes">Wind Chimes</string>
+
+    <string name="please_reactivate">Please reactivate the function to continue using it</string>
+    <string name="feature_deactivated">Feature deactivated</string>
+    <string name="function_activated_tap_to_close">This function is activated, tap to close</string>
+    <string name="clap_activated_successfully">Successfully Activated clap</string>
+    <string name="subscribe_remove_ads">Subscribe to remove all ads and enjoy an uninterrupted experience.</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="rate_this_app">Rate This App</string>
+    <string name="submit">Submit</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="are_you_sure">Are you sure you want to</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+
+
+</resources>

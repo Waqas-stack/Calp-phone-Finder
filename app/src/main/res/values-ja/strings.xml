@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">拍手で電話を探す</string>
+    <string name="clap_to_find_desc">携帯電話を探すために拍手してください</string>
+    <string name="click_to_activate">有効にするにはクリック</string>
+    <string name="flash_mode">フラッシュモード</string>
+    <string name="vibration_mode">バイブモード</string>
+    <string name="more_settings">その他の設定</string>
+    <string name="how_to_use">使い方</string>
+    <string name="sound">サウンド</string>
+    <string name="command">コマンド</string>
+    <string name="sound_sensitivity">音の感度</string>
+    <string name="schedule_deactivate">スケジュール停止機能</string>
+    <string name="start">開始</string>
+    <string name="end">終了</string>
+    <string name="remove_ads">広告を削除</string>
+    <string name="remove_ads_desc">アプリからすべての広告を削除します。</string>
+    <string name="sensitivity_very_high">非常に高い感度</string>
+    <string name="sensitivity_high">高感度</string>
+    <string name="sensitivity_average">平均感度</string>
+    <string name="setting">設定</string>
+    <string name="rate_me">評価する</string>
+    <string name="feedback">フィードバック</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="version">バージョン</string>
+    <string name="apply">適用</string>
+    <string name="volume">音量</string>
+    <string name="duration">期間</string>
+    <string name="tap_to_play_sound">タップして音を再生</string>
+    <string name="sound_steam_air">蒸気の音</string>
+    <string name="sound_baby_laugh">赤ちゃんの笑い声</string>
+    <string name="sound_boom">爆発音</string>
+    <string name="sound_dog">犬</string>
+    <string name="sound_cat">猫</string>
+    <string name="sound_church">教会</string>
+    <string name="sound_door_bell">ドアベル</string>
+    <string name="sound_horn">ホーン</string>
+    <string name="sound_drum">ドラム</string>
+    <string name="sound_hello">こんにちは</string>
+    <string name="sound_im_here">ここにいるよ</string>
+    <string name="sound_message">メッセージ</string>
+    <string name="sound_morse">モールス信号</string>
+    <string name="sound_police">パトカー</string>
+    <string name="sound_piano">ピアノ</string>
+    <string name="sound_rhythm">リズム</string>
+    <string name="sound_ship_bell">船のベル</string>
+    <string name="sound_beep">ビープ音</string>
+    <string name="sound_warning">警告</string>
+    <string name="sound_wind_chimes">風鈴</string>
+
+    <string name="please_reactivate">続けて使用するには、機能を再度有効にしてください</string>
+    <string name="feature_deactivated">機能が無効になりました</string>
+    <string name="function_activated_tap_to_close">この機能は有効です。タップして閉じる</string>
+    <string name="clap_activated_successfully">拍手検出が正常に有効になりました</string>
+    <string name="subscribe_remove_ads">すべての広告を削除して、中断のない体験を楽しむにはサブスクライブしてください。</string>
+    <string name="go_premium">プレミアムに移行</string>
+    <string name="rate_this_app">このアプリを評価する</string>
+    <string name="submit">送信</string>
+    <string name="confirmation">確認</string>
+    <string name="are_you_sure">本当に実行しますか？</string>
+    <string name="yes">はい</string>
+    <string name="cancel">キャンセル</string>
+
+
+</resources>

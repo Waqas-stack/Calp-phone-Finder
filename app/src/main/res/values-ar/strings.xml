@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">كشاف الهاتف بالتصفيق</string>
+    <string name="clap_to_find_desc">صفّق للعثور على هاتفك</string>
+    <string name="click_to_activate">اضغط للتفعيل</string>
+    <string name="flash_mode">وضع الفلاش</string>
+    <string name="vibration_mode">وضع الاهتزاز</string>
+    <string name="more_settings">إعدادات إضافية</string>
+    <string name="how_to_use">كيفية الاستخدام</string>
+    <string name="sound">الصوت</string>
+    <string name="command">الأمر</string>
+    <string name="sound_sensitivity">حساسية الصوت</string>
+    <string name="schedule_deactivate">ميزة الإيقاف المجدول</string>
+    <string name="start">ابدأ</string>
+    <string name="end">انتهِ</string>
+    <string name="remove_ads">إزالة الإعلانات</string>
+    <string name="remove_ads_desc">إزالة جميع الإعلانات من التطبيق.</string>
+    <string name="sensitivity_very_high">حساسية عالية جدًا</string>
+    <string name="sensitivity_high">حساسية عالية</string>
+    <string name="sensitivity_average">حساسية متوسطة</string>
+    <string name="setting">الإعدادات</string>
+    <string name="rate_me">قيّمني</string>
+    <string name="feedback">ملاحظات</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="version">الإصدار</string>
+    <string name="apply">تطبيق</string>
+    <string name="volume">مستوى الصوت</string>
+    <string name="duration">المدة</string>
+    <string name="tap_to_play_sound">اضغط لتشغيل الصوت</string>
+    <string name="sound_steam_air">بخار الهواء</string>
+    <string name="sound_baby_laugh">ضحكة طفل</string>
+    <string name="sound_boom">انفجار</string>
+    <string name="sound_dog">كلب</string>
+    <string name="sound_cat">قطة</string>
+    <string name="sound_church">كنيسة</string>
+    <string name="sound_door_bell">جرس الباب</string>
+    <string name="sound_horn">بوق</string>
+    <string name="sound_drum">طبل</string>
+    <string name="sound_hello">مرحبًا</string>
+    <string name="sound_im_here">أنا هنا</string>
+    <string name="sound_message">رسالة</string>
+    <string name="sound_morse">مورس</string>
+    <string name="sound_police">شرطة</string>
+    <string name="sound_piano">بيانو</string>
+    <string name="sound_rhythm">إيقاع</string>
+    <string name="sound_ship_bell">جرس السفينة</string>
+    <string name="sound_beep">صفارة</string>
+    <string name="sound_warning">تحذير</string>
+    <string name="sound_wind_chimes">أجراس الرياح</string>
+
+    <string name="please_reactivate">يرجى إعادة تفعيل الوظيفة للاستمرار في استخدامها</string>
+    <string name="feature_deactivated">تم إلغاء تفعيل الميزة</string>
+    <string name="function_activated_tap_to_close">تم تفعيل هذه الوظيفة، اضغط لإيقافها</string>
+    <string name="clap_activated_successfully">تم تفعيل التصفيق بنجاح</string>
+    <string name="subscribe_remove_ads">اشترك لإزالة جميع الإعلانات والاستمتاع بتجربة دون انقطاع.</string>
+    <string name="go_premium">الترقية إلى بريميوم</string>
+    <string name="rate_this_app">قيّم هذا التطبيق</string>
+    <string name="submit">إرسال</string>
+    <string name="confirmation">تأكيد</string>
+    <string name="are_you_sure">هل أنت متأكد أنك تريد</string>
+    <string name="yes">نعم</string>
+    <string name="cancel">إلغاء</string>
+
+</resources>

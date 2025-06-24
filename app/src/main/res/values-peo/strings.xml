@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">یابنده تلفن با کف زدن</string>
+    <string name="clap_to_find_desc">برای پیدا کردن تلفن خود کف بزنید</string>
+    <string name="click_to_activate">برای فعال‌سازی کلیک کنید</string>
+    <string name="flash_mode">حالت فلش</string>
+    <string name="vibration_mode">حالت لرزش</string>
+    <string name="more_settings">تنظیمات بیشتر</string>
+    <string name="how_to_use">نحوه استفاده</string>
+    <string name="sound">صدا</string>
+    <string name="command">دستور</string>
+    <string name="sound_sensitivity">حساسیت صدا</string>
+    <string name="schedule_deactivate">غیرفعالسازی زمان‌بندی‌شده</string>
+    <string name="start">شروع</string>
+    <string name="end">پایان</string>
+    <string name="remove_ads">حذف تبلیغات</string>
+    <string name="remove_ads_desc">تمام تبلیغات را از برنامه حذف کنید.</string>
+    <string name="sensitivity_very_high">حساسیت بسیار زیاد</string>
+    <string name="sensitivity_high">حساسیت زیاد</string>
+    <string name="sensitivity_average">حساسیت متوسط</string>
+    <string name="setting">تنظیمات</string>
+    <string name="rate_me">امتیاز دهید</string>
+    <string name="feedback">بازخورد</string>
+    <string name="privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="version">نسخه</string>
+    <string name="apply">اعمال</string>
+    <string name="volume">بلندی صدا</string>
+    <string name="duration">مدت‌زمان</string>
+    <string name="tap_to_play_sound">برای پخش صدا ضربه بزنید</string>
+    <string name="sound_steam_air">بخار</string>
+    <string name="sound_baby_laugh">خنده کودک</string>
+    <string name="sound_boom">انفجار</string>
+    <string name="sound_dog">سگ</string>
+    <string name="sound_cat">گربه</string>
+    <string name="sound_church">کلیسا</string>
+    <string name="sound_door_bell">زنگ در</string>
+    <string name="sound_horn">بوق</string>
+    <string name="sound_drum">طبل</string>
+    <string name="sound_hello">سلام</string>
+    <string name="sound_im_here">من اینجا هستم</string>
+    <string name="sound_message">پیام</string>
+    <string name="sound_morse">کد مورس</string>
+    <string name="sound_police">پلیس</string>
+    <string name="sound_piano">پیانو</string>
+    <string name="sound_rhythm">ریتم</string>
+    <string name="sound_ship_bell">زنگ کشتی</string>
+    <string name="sound_beep">بیپ</string>
+    <string name="sound_warning">هشدار</string>
+    <string name="sound_wind_chimes">زنگ‌های بادی</string>
+
+    <string name="please_reactivate">لطفاً برای ادامه استفاده، عملکرد را دوباره فعال کنید</string>
+    <string name="feature_deactivated">ویژگی غیرفعال شد</string>
+    <string name="function_activated_tap_to_close">این عملکرد فعال است، برای بستن ضربه بزنید</string>
+    <string name="clap_activated_successfully">عملکرد تشخیص دست زدن با موفقیت فعال شد</string>
+    <string name="subscribe_remove_ads">اشتراک بگیرید تا همه تبلیغات حذف شده و تجربه‌ای بدون وقفه داشته باشید.</string>
+    <string name="go_premium">خرید نسخه پریمیوم</string>
+    <string name="rate_this_app">امتیاز به این برنامه</string>
+    <string name="submit">ارسال</string>
+    <string name="confirmation">تأیید</string>
+    <string name="are_you_sure">آیا مطمئن هستید که می‌خواهید</string>
+    <string name="yes">بله</string>
+    <string name="cancel">لغو</string>
+
+
+</resources>

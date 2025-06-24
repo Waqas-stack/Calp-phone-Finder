@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hitta telefon med applåd</string>
+    <string name="clap_to_find_desc">Applådera för att hitta din telefon</string>
+    <string name="click_to_activate">Klicka för att aktivera</string>
+    <string name="flash_mode">Blixtläge</string>
+    <string name="vibration_mode">Vibrationsläge</string>
+    <string name="more_settings">Fler inställningar</string>
+    <string name="how_to_use">Hur man använder</string>
+    <string name="sound">Ljud</string>
+    <string name="command">Kommando</string>
+    <string name="sound_sensitivity">Ljudkänslighet</string>
+    <string name="schedule_deactivate">Schemalagd avaktivering</string>
+    <string name="start">Start</string>
+    <string name="end">Slut</string>
+    <string name="remove_ads">Ta bort annonser</string>
+    <string name="remove_ads_desc">Ta bort alla annonser från appen.</string>
+    <string name="sensitivity_very_high">Mycket hög känslighet</string>
+    <string name="sensitivity_high">Hög känslighet</string>
+    <string name="sensitivity_average">Medelhög känslighet</string>
+    <string name="setting">Inställningar</string>
+    <string name="rate_me">Betygsätt mig</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Sekretesspolicy</string>
+    <string name="version">Version</string>
+    <string name="apply">Tillämpa</string>
+    <string name="volume">Volym</string>
+    <string name="duration">Varaktighet</string>
+    <string name="tap_to_play_sound">Tryck för att spela ljud</string>
+    <string name="sound_steam_air">Ångluft</string>
+    <string name="sound_baby_laugh">Bebisskratt</string>
+    <string name="sound_boom">Explosion</string>
+    <string name="sound_dog">Hund</string>
+    <string name="sound_cat">Katt</string>
+    <string name="sound_church">Kyrka</string>
+    <string name="sound_door_bell">Dörrklocka</string>
+    <string name="sound_horn">Tuta</string>
+    <string name="sound_drum">Trumma</string>
+    <string name="sound_hello">Hej</string>
+    <string name="sound_im_here">Jag är här</string>
+    <string name="sound_message">Meddelande</string>
+    <string name="sound_morse">Morse</string>
+    <string name="sound_police">Polis</string>
+    <string name="sound_piano">Piano</string>
+    <string name="sound_rhythm">Rytm</string>
+    <string name="sound_ship_bell">Skeppsklocka</string>
+    <string name="sound_beep">Pip</string>
+    <string name="sound_warning">Varning</string>
+    <string name="sound_wind_chimes">Vindspel</string>
+
+    <string name="please_reactivate">Aktivera funktionen igen för att fortsätta använda den</string>
+    <string name="feature_deactivated">Funktionen har inaktiverats</string>
+    <string name="function_activated_tap_to_close">Funktionen är aktiverad, tryck för att stänga</string>
+    <string name="clap_activated_successfully">Applådfunktionen aktiverades framgångsrikt</string>
+    <string name="subscribe_remove_ads">Prenumerera för att ta bort alla annonser och njut av en avbrottsfri upplevelse</string>
+    <string name="go_premium">Bli Premium</string>
+    <string name="rate_this_app">Betygsätt den här appen</string>
+    <string name="submit">Skicka</string>
+    <string name="confirmation">Bekräftelse</string>
+    <string name="are_you_sure">Är du säker på att du vill</string>
+    <string name="yes">Ja</string>
+    <string name="cancel">Avbryt</string>
+
+
+</resources>
