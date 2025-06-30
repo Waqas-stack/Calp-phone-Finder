@@ -19,8 +19,6 @@ import com.o9tech.clapphonefinder.ViewModel.MainViewModel
 
 @Composable
 fun Navigation(){
-
-
     val context = LocalContext.current
     val mainViewModel: MainViewModel = viewModel()
     val navController = rememberNavController()

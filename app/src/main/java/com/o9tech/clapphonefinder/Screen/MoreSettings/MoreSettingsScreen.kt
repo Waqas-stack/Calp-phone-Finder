@@ -5,6 +5,7 @@ import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -48,6 +49,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -68,12 +70,16 @@ import androidx.compose.ui.window.Dialog
 import androidx.core.net.toUri
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.google.android.gms.ads.AdSize
 import com.o9tech.clapphonefinder.R
 import com.o9tech.clapphonefinder.ViewModel.MainViewModel
+import com.o9tech.clapphonefinder.adds.BannersAds
 import com.o9tech.clapphonefinder.ui.theme.black
 import com.o9tech.clapphonefinder.ui.theme.green
 import com.o9tech.clapphonefinder.ui.theme.green_bg
 import com.o9tech.clapphonefinder.ui.theme.mode_setting
+import com.o9tech.clapphonefinder.ui.theme.mode_switch
+import kotlinx.coroutines.delay
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -114,6 +120,56 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
     var tempSwitchState by remember { mutableStateOf(false) }
     val packageName = context.packageName
     val appLink = "https://play.google.com/store/apps/details?id=$packageName"
+
+
+    //
+
+
+//    val context = LocalContext.current
+    var isSwitchOn by remember { mutableStateOf(false) }
+    var startHour by remember { mutableStateOf<Int?>(null) }
+    var startMinute by remember { mutableStateOf<Int?>(null) }
+    var endHour by remember { mutableStateOf<Int?>(null) }
+    var endMinute by remember { mutableStateOf<Int?>(null) }
+
+    val startTimeSelected = startHour != null && startMinute != null
+    val endTimeSelected = endHour != null && endMinute != null
+
+    // Auto-run timer once both times are selected and switch is ON
+    LaunchedEffect(startTimeSelected, endTimeSelected, isSwitchOn) {
+        if (isSwitchOn && startTimeSelected && endTimeSelected) {
+            val startCal = Calendar.getInstance().apply {
+                set(Calendar.HOUR_OF_DAY, startHour!!)
+                set(Calendar.MINUTE, startMinute!!)
+                set(Calendar.SECOND, 0)
+                set(Calendar.MILLISECOND, 0)
+            }
+
+            val endCal = Calendar.getInstance().apply {
+                set(Calendar.HOUR_OF_DAY, endHour!!)
+                set(Calendar.MINUTE, endMinute!!)
+                set(Calendar.SECOND, 0)
+                set(Calendar.MILLISECOND, 0)
+            }
+
+            // If end is before start, treat it as next day
+            if (endCal.before(startCal)) {
+                endCal.add(Calendar.DAY_OF_MONTH, 1)
+            }
+
+            val durationMillis = endCal.timeInMillis - startCal.timeInMillis
+
+            if (durationMillis > 0) {
+                delay(durationMillis) // Wait till time period
+                Toast.makeText(context, "⏰ Time Reached!", Toast.LENGTH_LONG).show()
+                mainViewModel.stopDetection()
+
+            }
+        }
+    }
+
+
+//
 
 
     fun calculateSelectedTime(start: String, end: String): String {
@@ -215,68 +271,71 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                         .background(Color.White)
                         .padding(horizontal = 14.dp, vertical = 2.dp)
                 ) {
-                    Card(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .height(110.dp)
-                            .clickable {
-                                showDialog = true
-                            }, // Set height as needed
-                        shape = RoundedCornerShape(12.dp), // Slightly rounded corners
-                    ) {
-                        Box(
-                            modifier = Modifier
-                                .fillMaxSize()
-                                .background(
-                                    brush = Brush.horizontalGradient(
-                                        colors = listOf(
-//                                            Color(0xFF81C784),
-                                            Color(0xFFFFAA4D),
-                                            Color(0xFFFF8600), // Start color (green)
-                                            // End color (light green)
-                                        )
-                                    )
-                                ),
-//                            contentAlignment = Alignment.Center
-                        ) {
-                            Row(
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .padding(16.dp),
-//                                horizontalArrangement = Arrangement.Center,
-//                                verticalAlignment = Alignment.CenterVertically
-                            ) {
-                                Column {
-                                    Text(
-                                        text = stringResource(id = R.string.remove_ads),
-//                                        text = "Remove ADs",
-                                        color = Color.White,
-                                        fontWeight = FontWeight.Bold,
-//                                        style = MaterialTheme.typography.titleMedium
-                                        fontSize = 22.sp,
-                                    )
-                                    Spacer(modifier = Modifier.height(8.dp))
-                                    Text(
-                                        text = stringResource(id = R.string.remove_ads_desc),
-//                                        text = "Remove all ads from the \napplication.",
-                                        color = Color.White.copy(alpha = 0.8f),
-                                        style = MaterialTheme.typography.bodyMedium
-                                    )
 
+                    BannersAds(modifier = Modifier.fillMaxWidth(), adSize =  AdSize.LARGE_BANNER)
 
-                                }
-                                Spacer(modifier = Modifier.weight(1f))
-                                Icon(
-                                    painter = painterResource(id = R.drawable.request),
-                                    contentDescription = "flash_on",
-                                    tint = Color.White,
-                                    modifier = Modifier
-                                        .size(64.dp)
-                                )
-
-                            }
-                        }
-                    }
+//                    Card(
+//                        modifier = Modifier
+//                            .fillMaxWidth()
+//                            .height(110.dp)
+//                            .clickable {
+//                                showDialog = true
+//                            }, // Set height as needed
+//                        shape = RoundedCornerShape(12.dp), // Slightly rounded corners
+//                    ) {
+//                        Box(
+//                            modifier = Modifier
+//                                .fillMaxSize()
+//                                .background(
+//                                    brush = Brush.horizontalGradient(
+//                                        colors = listOf(
+////                                            Color(0xFF81C784),
+//                                            Color(0xFFFFAA4D),
+//                                            Color(0xFFFF8600), // Start color (green)
+//                                            // End color (light green)
+//                                        )
+//                                    )
+//                                ),
+////                            contentAlignment = Alignment.Center
+//                        ) {
+//                            Row(
+//                                modifier = Modifier
+//                                    .fillMaxWidth()
+//                                    .padding(16.dp),
+////                                horizontalArrangement = Arrangement.Center,
+////                                verticalAlignment = Alignment.CenterVertically
+//                            ) {
+//                                Column {
+//                                    Text(
+//                                        text = stringResource(id = R.string.remove_ads),
+////                                        text = "Remove ADs",
+//                                        color = Color.White,
+//                                        fontWeight = FontWeight.Bold,
+////                                        style = MaterialTheme.typography.titleMedium
+//                                        fontSize = 22.sp,
+//                                    )
+//                                    Spacer(modifier = Modifier.height(8.dp))
+//                                    Text(
+//                                        text = stringResource(id = R.string.remove_ads_desc),
+////                                        text = "Remove all ads from the \napplication.",
+//                                        color = Color.White.copy(alpha = 0.8f),
+//                                        style = MaterialTheme.typography.bodyMedium
+//                                    )
+//
+//
+//                                }
+//                                Spacer(modifier = Modifier.weight(1f))
+//                                Icon(
+//                                    painter = painterResource(id = R.drawable.request),
+//                                    contentDescription = "flash_on",
+//                                    tint = Color.White,
+//                                    modifier = Modifier
+//                                        .size(64.dp)
+//                                )
+//
+//                            }
+//                        }
+//                    }
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
                         text = stringResource(id = R.string.command),
@@ -401,26 +460,30 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
 
                                     // Switch UI
                                     Switch(
-                                        checked = isActives,
-                                        onCheckedChange = { newValue ->
-                                            tempSwitchState = newValue
-                                            showDialogs = true // Show dialog first
-                                            //
-//                                            if (startTime.isNotEmpty() && endTime.isNotEmpty()) {
-////                                                selectedTime = calculateSelectedTime(startTime, endTime)
-//                                                selectedTime = endTime
-//                                                mainViewModel.scheduleStopAt(endTime)
-//                                                mainViewModel.scheduleStopAt(selectedTime)
-//                                            }
-
-                                        },
+                                        checked = isSwitchOn,
+                                        onCheckedChange = { isSwitchOn = it },
+//                                        checked = isActives,
+//                                        onCheckedChange = { newValue ->
+//                                            tempSwitchState = newValue
+//                                            showDialogs = true // Show dialog first
+//                                            //
+////                                            if (startTime.isNotEmpty() && endTime.isNotEmpty()) {
+//////                                                selectedTime = calculateSelectedTime(startTime, endTime)
+////                                                selectedTime = endTime
+////                                                mainViewModel.scheduleStopAt(endTime)
+////                                                mainViewModel.scheduleStopAt(selectedTime)
+////                                            }
+//
+//                                        },
                                         modifier = Modifier.scale(0.8f),
                                         colors = SwitchDefaults.colors(
                                             checkedThumbColor = Color.White,
                                             uncheckedThumbColor = Color.Gray,
-                                            checkedTrackColor = Color(0xFF4CAF50),
-                                            uncheckedTrackColor = Color.DarkGray
-                                        )
+                                            checkedTrackColor = green,
+                                            uncheckedTrackColor = mode_switch,
+                                            uncheckedBorderColor = Color.Unspecified
+
+                                        ),
                                     )
 
                                 }
@@ -443,15 +506,35 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                                         )
                                         Spacer(modifier = Modifier.height(8.dp))
                                         Button(
-
                                             onClick = {
-                                                startTimePickerDialog.show()
+                                                val cal = Calendar.getInstance()
+                                                TimePickerDialog(
+                                                    context,
+                                                    { _, hour, minute ->
+                                                        startHour = hour
+                                                        startMinute = minute
+                                                    },
+                                                    cal.get(Calendar.HOUR_OF_DAY),
+                                                    cal.get(Calendar.MINUTE),
+                                                    true
+                                                ).show()
                                             },
+                                            enabled = isSwitchOn,
                                             modifier = Modifier.width(100.dp),
                                             shape = RoundedCornerShape(3.dp),
                                             colors = ButtonDefaults.buttonColors(containerColor = green_bg)
                                         ) {
-                                            Text(startTime, color = green)
+//                                            Text(startTime, color = green)
+                                            Text(
+                                                "${
+                                                    startHour?.let {
+                                                        String.format(
+                                                            "%02d:%02d",
+                                                            it,
+                                                            startMinute
+                                                        ) } ?: "--:--"
+                                                }",
+                                                color = Color(0xFF4CAF50))
                                         }
                                     }
 
@@ -467,17 +550,40 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                                         )
                                         Spacer(modifier = Modifier.height(3.dp))
                                         Button(
-                                            onClick = { endTimePickerDialog.show() },
+                                            onClick = {
+                                                val cal = Calendar.getInstance()
+                                                TimePickerDialog(
+                                                    context,
+                                                    { _, hour, minute ->
+                                                        endHour = hour
+                                                        endMinute = minute
+                                                    },
+                                                    cal.get(Calendar.HOUR_OF_DAY),
+                                                    cal.get(Calendar.MINUTE),
+                                                    true
+                                                ).show()
+                                            },
+                                            enabled = isSwitchOn,
+//                                            onClick = { endTimePickerDialog.show() },
                                             shape = RoundedCornerShape(8.dp),
                                             modifier = Modifier.width(100.dp),
                                             colors = ButtonDefaults.buttonColors(containerColor = green_bg) // your green_bg
                                         ) {
-                                            Text(endTime, color = Color(0xFF4CAF50)) // your green
+//                                            Text(endTime, color = Color(0xFF4CAF50)) // your green
+                                            Text(
+                                                "${
+                                                    endHour?.let {
+                                                        String.format(
+                                                            "%02d:%02d",
+                                                            it,
+                                                            endMinute
+                                                        )
+                                                    } ?: "--:--"
+                                                }",
+                                                color = Color(0xFF4CAF50))
+
                                         }
                                         Spacer(modifier = Modifier.height(3.dp))
-
-                                        Text(selectedTime, color = Color(0xFF4CAF50)) // your green
-
                                     }
                                 }
                             }
@@ -587,7 +693,11 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                         shape = RoundedCornerShape(16.dp),
 //                                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
                         colors = CardDefaults.cardColors(containerColor = mode_setting),
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable {
+//                            navController.navigate("TimeRangeSelector")
+                            }
                     ) {
                         Row(
                             modifier = Modifier
@@ -606,8 +716,8 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                             Spacer(modifier = Modifier.width(8.dp))
 
                             Text(
-                                text = stringResource(id = R.string.feedback),
-//                                text = "Feedback",
+//                                text = stringResource(id = R.string.feedback),
+                                text = "More Apps",
                                 fontSize = 16.sp,
                                 color = Color.Black,
                                 fontWeight = FontWeight.Bold,
@@ -628,7 +738,11 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                         shape = RoundedCornerShape(16.dp),
 //                                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
                         colors = CardDefaults.cardColors(containerColor = mode_setting),
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable {
+//                            navController.navigate("PrivacyPolicyScreen")
+                            }
                     ) {
                         Row(
                             modifier = Modifier
@@ -669,7 +783,11 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                         shape = RoundedCornerShape(16.dp),
 //                                elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
                         colors = CardDefaults.cardColors(containerColor = mode_setting),
-                        modifier = Modifier.fillMaxWidth()
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable {
+//                            openAppInPlayStore(context)
+                            }
                     ) {
                         Row(
                             modifier = Modifier
@@ -711,7 +829,9 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
         }
     )
     if (showDialog) {
-        Dialog(onDismissRequest = { showDialog = false }) {
+        Dialog(
+
+            onDismissRequest = { showDialog = false }) {
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -769,6 +889,8 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
     }
     if (showSheet) {
         ModalBottomSheet(
+            contentColor = Color.Black,
+            containerColor = Color.White,
             onDismissRequest = { showSheet = false },
             sheetState = sheetState,
             shape = RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp)
@@ -800,15 +922,28 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                         horizontalArrangement = Arrangement.Center
                     ) {
                         repeat(5) { index ->
-                            IconButton(onClick = { rating = index + 1 }) {
+                            IconButton(onClick = {
+                                rating = if (rating == index + 1) index else index + 1
+                            }) {
                                 Icon(
                                     imageVector = if (index < rating) Icons.Default.Star else Icons.Outlined.Star,
                                     contentDescription = "Star",
-                                    tint = Color(0xFFFFC107),
+//                                    tint = Color(0xFFFFC107),
+                                    tint = if (index < rating) Color(0xFFFFC107) else Color.Gray,
                                     modifier = Modifier.size(36.dp)
                                 )
                             }
                         }
+//                        repeat(5) { index ->
+//                            IconButton(onClick = { rating = index + 1 }) {
+//                                Icon(
+//                                    imageVector = if (index < rating) Icons.Default.Star else Icons.Outlined.Star,
+//                                    contentDescription = "Star",
+//                                    tint = Color(0xFFFFC107),
+//                                    modifier = Modifier.size(36.dp)
+//                                )
+//                            }
+//                        }
                     }
 
                     Spacer(modifier = Modifier.height(24.dp))
@@ -837,6 +972,7 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
     }
     if (showDialogs) {
         AlertDialog(
+            containerColor = Color.White,
             onDismissRequest = { showDialogs = false },
             title = {
                 Text(
@@ -897,9 +1033,11 @@ fun openAppInPlayStore(context: Context) {
     val packageName = context.packageName
     val uri = "market://details?id=$packageName".toUri()
     val goToMarket = Intent(Intent.ACTION_VIEW, uri).apply {
-        addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY or
-                Intent.FLAG_ACTIVITY_NEW_DOCUMENT or
-                Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
+        addFlags(
+            Intent.FLAG_ACTIVITY_NO_HISTORY or
+                    Intent.FLAG_ACTIVITY_NEW_DOCUMENT or
+                    Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+        )
     }
 
     try {

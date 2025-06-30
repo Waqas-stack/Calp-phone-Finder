@@ -18,6 +18,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.o9tech.clapphonefinder.Locale.LocaleManager
 import com.o9tech.clapphonefinder.Navigation.Navigation
 import com.o9tech.clapphonefinder.Screen.ClapDectionScreen.ClapDetectionScreen
@@ -35,24 +36,12 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        installSplashScreen()
         enableEdgeToEdge()
         val clapDetector = ClapDetector()
 
         setContent {
             ClapPhoneFinderTheme {
-
-//                var clapDetected by remember { mutableStateOf(false) }
-//                LaunchedEffect(Unit) {
-//                    clapDetector.startListening {
-//                        clapDetected = true
-//                        delay(1000)
-//                        clapDetected = false
-//                    }
-//                }
-//
-//                ClapDetectionScreen(clapDetected)
-//            }
-
                 Navigation()
             }
         }}

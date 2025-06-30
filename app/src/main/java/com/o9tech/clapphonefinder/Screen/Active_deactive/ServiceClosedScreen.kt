@@ -65,7 +65,7 @@ fun ServiceClosedScreen(navController: NavHostController) {
         },
         content = { paddingValues ->
             Surface(
-                modifier = androidx.compose.ui.Modifier
+                modifier = Modifier
                     .fillMaxSize()
                     .padding(paddingValues),
                 color = Color.White
@@ -73,37 +73,23 @@ fun ServiceClosedScreen(navController: NavHostController) {
 
                 Column(
                     modifier = Modifier.fillMaxSize(),
-//                    verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                     Text(
                         text = stringResource(id = R.string.feature_deactivated),
-//                        "Feature deactivated",
                         color = Color.Black, fontSize = 20.sp,
                         fontWeight = FontWeight.Bold
                     )
                     Spacer(modifier = Modifier.height(12.dp))
-//                    Text(
-//                        "please reactive the function to continue \nusing it", color = Color.Black, fontSize = 16.sp,
-//                    )
                     Text(
-//                        text = "please reactive the function to continue \nusing it",
                         text = stringResource(id = R.string.function_activated_tap_to_close),
                         color = Color.Black,
                         fontSize = 16.sp,
-                        textAlign = TextAlign.Center, // ✅ Center each line of the text
-                        modifier = Modifier.fillMaxWidth() // ✅ Needed for proper textAlign
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
                     )
                 }
 
-
-
-//                Box(
-//                    modifier = Modifier.fillMaxSize(),
-//                    contentAlignment = Alignment.Center
-//                ) {
-//                    Text("Service Closed", color = Color.Gray, fontSize = 20.sp)
-//                }
             }
         }
     )

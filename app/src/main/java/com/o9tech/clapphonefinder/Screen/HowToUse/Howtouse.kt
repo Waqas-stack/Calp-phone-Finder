@@ -93,7 +93,7 @@ fun HowToUseScreen(navController: NavHostController) {
         },
         content = { paddingValues ->
             Surface(
-                modifier = androidx.compose.ui.Modifier
+                modifier = Modifier
                     .fillMaxSize()
                     .padding(paddingValues),
                 color = Color.White
@@ -102,7 +102,7 @@ fun HowToUseScreen(navController: NavHostController) {
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(16.dp)
-                        .verticalScroll(rememberScrollState()), // allow full screen scroll
+                        .verticalScroll(rememberScrollState()),
                     verticalArrangement = Arrangement.Top,
                     horizontalAlignment = Alignment.Start
                 ) {
@@ -119,19 +119,16 @@ fun HowToUseScreen(navController: NavHostController) {
                         fontSize = 16.sp,
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
-
                     Text(
                         text = "2. Use the volume slider to adjust the sound.",
                         fontSize = 16.sp,
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
-
                     Text(
                         text = "3. Choose the duration using the buttons provided.",
                         fontSize = 16.sp,
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
-
                     Text(
                         text = "4. Tap 'Apply' to start the sound effect.",
                         fontSize = 16.sp,

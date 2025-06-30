@@ -76,4 +76,14 @@ dependencies {
     implementation(files("libs/musicg-1.4.2.0.jar"))
 //    implementation("com.github.fracpete:musicg:1.4.2.2")
 
+    //splash
+    implementation ("androidx.core:core-splashscreen:1.0.1")
+
+
+    //addmob
+    implementation("com.google.android.gms:play-services-ads:23.6.0")
+
+    
+
+
 }

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+<!--    <style name="Theme.MyAppSplash" parent="Theme.SplashScreen" >-->
+<!--        <item name="windowSplashScreenBackground">@color/white</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/airhorn</item>-->
+<!--        &lt;!&ndash;        <item name="windowSplashScreenAnimationDuration">500</item>&ndash;&gt;-->
+<!--        <item name="postSplashScreenTheme">@style/Theme.ClapPhoneFinder</item>-->
+<!--    </style>-->
+
     <style name="Theme.ClapPhoneFinder" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

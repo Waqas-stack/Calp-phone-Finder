@@ -54,16 +54,6 @@ fun ClapDetectionScreen(mainViewModel: MainViewModel, navController: NavHostCont
         mainViewModel.startDetection("YES")
     }
 
-//    DisposableEffect(Unit) {
-//        // On enter
-//        mainViewModel.startDetection("YES")
-//
-//        onDispose {
-//            // On screen leave
-//            mainViewModel.stopDetection()
-//        }
-//    }
-
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -75,7 +65,6 @@ fun ClapDetectionScreen(mainViewModel: MainViewModel, navController: NavHostCont
         Button(onClick = {
             mainViewModel.stopDetection()
 //            DetectionManager.stopDetection()
-
             // Stop the foreground service
             context.stopService(Intent(context, ForegroundService::class.java))
         }) {
