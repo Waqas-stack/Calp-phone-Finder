@@ -4,7 +4,9 @@ import android.app.TimePickerDialog
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
+import android.media.AudioManager
 import android.net.Uri
+import android.util.Log
 import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -169,7 +171,31 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
     }
 
 
-//
+
+    fun onSensitivityChanged(option: String, context: Context) {
+        val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+        when (option) {
+            "Very High sensitivity" -> {
+                val volume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, volume, 0)
+                Log.d("SoundSensitivity", "Set volume to VERY HIGH")
+            }
+
+            "High sensitivity" -> {
+                val volume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, (volume * 0.7).toInt(), 0)
+                Log.d("SoundSensitivity", "Set volume to HIGH")
+            }
+
+            "Average sensitivity" -> {
+                val volume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, (volume * 0.4).toInt(), 0)
+                Log.d("SoundSensitivity", "Set volume to AVERAGE")
+            }
+        }
+    }
+
 
 
     fun calculateSelectedTime(start: String, end: String): String {
@@ -402,7 +428,10 @@ fun MoreSettingsScreen(navController: NavHostController, mainViewModel: MainView
                                         )
                                         RadioButton(
                                             selected = selectedOption == optionText,
-                                            onClick = null,
+                                            onClick = {
+                                                selectedOption = optionText
+                                                onSensitivityChanged(optionText, context)
+                                            },
                                             modifier = Modifier.scale(0.8f),
                                             colors = RadioButtonDefaults.colors(
                                                 selectedColor = Color(0xFF4CAF50), // Green when selected

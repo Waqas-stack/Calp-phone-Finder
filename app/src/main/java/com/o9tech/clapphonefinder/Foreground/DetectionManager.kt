@@ -22,19 +22,19 @@ import com.o9tech.clapphonefinder.ViewModel.triggerVibration
 
 
 
-//object DetectionManager {
-//    var detectorThread: DetectorThread? = null
-//    var recorderThread: RecorderThread? = null
-//
-//    fun stopDetection() {
-//        detectorThread?.stopDetection()
-//        recorderThread?.stopRecording() // if you have this logic
-//
-//        recorderThread?.interrupt() // if using thread-based RecorderThread
-//        detectorThread = null
-//        recorderThread = null
-//    }
-//}
+object DetectionManassger {
+    var detectorThread: DetectorThread? = null
+    var recorderThread: RecorderThread? = null
+
+    fun stopDetection() {
+        detectorThread?.stopDetection()
+        recorderThread?.stopRecording() // if you have this logic
+
+        recorderThread?.interrupt() // if using thread-based RecorderThread
+        detectorThread = null
+        recorderThread = null
+    }
+}
 
 
 
